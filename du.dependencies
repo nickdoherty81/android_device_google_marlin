@@ -1,0 +1,17 @@
+[
+  {
+    "repository":   "DirtyUnicorns/android_kernel_google_pixel",
+    "target_path":  "kernel/google/pixel",
+    "branch":       "o8x"
+  },
+  {
+    "repository":   "DirtyUnicorns/android_device_google_contexthub",
+    "target_path":  "device/google/contexthub",
+    "branch":       "o8x"
+  },
+  {
+    "repository":  "DirtyUnicorns/android_vendor_google",
+    "target_path": "vendor/google",
+    "branch":      "o8x"
+  }
+]

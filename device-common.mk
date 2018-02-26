@@ -271,7 +271,7 @@ PRODUCT_PACKAGES += \
 
 # sensor utilities (only for userdebug and eng builds)
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-ifeq (,$(filter lineage_marlin lineage_sailfish, $(TARGET_PRODUCT)))
+ifeq (,$(filter du_marlin du_sailfish, $(TARGET_PRODUCT)))
 PRODUCT_PACKAGES += \
     nanotool \
     sensortest
@@ -313,7 +313,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Write Manufacturer & Model information in created media files.
 # IMPORTANT: ONLY SET THIS PROPERTY TO TRUE FOR PUBLIC DEVICES
-ifneq ($(filter lineage_sailfish% aosp_sailfish% sailfish% lineage_marlin% aosp_marlin% marlin%, $(TARGET_PRODUCT)),)
+ifneq ($(filter du_sailfish% aosp_sailfish% sailfish% du_marlin% aosp_marlin% marlin%, $(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     media.recorder.show_manufacturer_and_model=true
 else
@@ -503,7 +503,7 @@ PRODUCT_PACKAGES += \
 
 # Library used for VTS tests  (only for userdebug and eng builds)
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-ifeq (,$(filter lineage_marlin lineage_sailfish, $(TARGET_PRODUCT)))
+ifeq (,$(filter du_marlin du_sailfish, $(TARGET_PRODUCT)))
 # For VTS profiling.
 PRODUCT_PACKAGES += \
      libvts_profiling \

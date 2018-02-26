@@ -1,17 +1,13 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
-
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Dirty stuff.
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
--include device/google/marlin/marlin/device-lineage.mk
+-include device/google/marlin/marlin/device-du.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_marlin
+PRODUCT_NAME := du_marlin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := HTC
